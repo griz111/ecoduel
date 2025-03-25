@@ -1,0 +1,95 @@
+body {
+    background: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bet-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.bet-btn {
+    padding: 12px 24px;
+    background: #2ecc71;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.bet-btn.active {
+    background: #27ae60;
+    transform: scale(1.1);
+}
+
+.elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.element-btn {
+    padding: 30px;
+    font-size: 32px;
+    border: none;
+    border-radius: 12px;
+    background: #34495e;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.element-btn:hover {
+    transform: scale(1.05);
+}
+
+.wallet-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #2c3e50;
+    border-radius: 12px;
+}
+
+#wallet-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+}
+
+#status {
+    margin-top: 20px;
+    padding: 15px;
+    background: #2980b9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.winner-animation {
+    animation: pulse 1s infinite;
+}

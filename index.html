@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoDuel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌿 EcoDuel 🔥</h1>
+            <div id="balance">Баланс: 100 ECO</div>
+        </div>
+
+        <div class="bet-buttons">
+            <button class="bet-btn" data-bet="10">10 ECO</button>
+            <button class="bet-btn" data-bet="50">50 ECO</button>
+            <button class="bet-btn" data-bet="100">100 ECO</button>
+        </div>
+
+        <div class="elements">
+            <button class="element-btn" data-element="🌿">🌿</button>
+            <button class="element-btn" data-element="💧">💧</button>
+            <button class="element-btn" data-element="🔥">🔥</button>
+        </div>
+
+        <div class="wallet-section">
+            <input type="text" id="wallet-input" placeholder="EQ...Ваш TON кошелек">
+            <button id="set-wallet">Сохранить</button>
+            <button id="withdraw-btn">Вывести 1 TON</button>
+        </div>
+
+        <div id="status"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
